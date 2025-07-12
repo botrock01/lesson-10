@@ -41,16 +41,16 @@ class Program
         Console.WriteLine("===================================");
         List<int> numbers = new List<int> { 2, 5, 9, 12, 15, 22, 8, 11, 33, 4 };
 
-        // Умова: парні числа
+
         Func<int, bool> isEven = x => x % 2 == 0;
 
-        // Умова: більше ніж 10
+
         Func<int, bool> greaterThanTen = x => x > 10;
 
-        // Умова: ділиться на 3
+
         Func<int, bool> divisibleByThree = x => x % 3 == 0;
 
-        // Виведення результатів
+
         Console.WriteLine("Парні числа: " + string.Join(", ", Filter(numbers, isEven)));
         Console.WriteLine("Числа > 10: " + string.Join(", ", Filter(numbers, greaterThanTen)));
         Console.WriteLine("Числа, кратні 3: " + string.Join(", ", Filter(numbers, divisibleByThree)));
